@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\fused\Desktop\lw_3\main.cpp(169,1): warning C4715: 'Interpreter::proc_id': not all control paths return a value
+C:\Users\fused\Desktop\lw_3\main.cpp(197,1): warning C4715: 'Interpreter::proc_operand': not all control paths return a value
+C:\Users\fused\Desktop\lw_3\main.cpp(240,1): warning C4715: 'Interpreter::proc_value': not all control paths return a value
+  lw_3.vcxproj -> C:\Users\fused\Desktop\lw_3\x64\Debug\lw_3.exe

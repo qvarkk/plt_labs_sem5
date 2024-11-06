@@ -1,0 +1,33 @@
+﻿  main.cpp
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(252,31): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(276,74): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(319,27): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(357,89): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(364,88): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(409,114): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(412,114): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(415,114): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(418,115): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(441,103): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(444,89): warning C4566: character represented by universal-character-name '\u2205' cannot be represented in the current code page (1252)
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(210,43): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(212,42): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(212,81): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(214,42): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(214,81): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(216,51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(218,51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(220,51): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(222,52): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(358,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(365,22): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(382,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(386,24): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(390,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(428,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(447,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(369,1): warning C4715: 'Interpreter::proc_id': not all control paths return a value
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(231,1): warning C4715: 'Interpreter::process_triad': not all control paths return a value
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(400,1): warning C4715: 'Interpreter::proc_operand': not all control paths return a value
+D:\CODE\plt_labs_sem5\lw_5\main.cpp(141,1): warning C4715: 'Interpreter::get_op_char': not all control paths return a value
+  lw_5.vcxproj -> D:\CODE\plt_labs_sem5\lw_5\x64\Debug\lw_5.exe

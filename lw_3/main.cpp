@@ -15,7 +15,7 @@ Expr	: Expr + Operand |
 Operand : Value |
 		  Func (Expr)
 
-Value	: Id | 
+Value	: Id |
 		  Const
 
 Func	: sin |
@@ -55,10 +55,14 @@ public:
 		int i = 1;
 
 		while (current_char != EOF) {
-			std::cout << "Operator " << i << ":\t";
+			std::cout << i << ":\t";
 
 			get_next_char();
-			std::pair<std::string, double> var = proc_id(true);
+			std::pair<std::string, double> var;
+			if (current_char != EOF)
+				var = proc_id(true);
+			else
+				break;
 
 			if (current_char != '(')
 				error("'(' Expected");
@@ -68,16 +72,14 @@ public:
 
 			if (current_char != ')')
 				error("')' Expected");
-			get_next_char();
 
-			for (auto &x : symbol_table) {
+			for (auto& x : symbol_table) {
 				if (x.first == var.first) {
 					x.second = value;
 				}
 			}
 
-			if (current_char != '\n' && current_char != '\r' && current_char != EOF)
-				error("Newline expected");
+			std::cout << std::endl;
 
 			i++;
 		}
@@ -94,9 +96,9 @@ private:
 	char current_char;
 	std::ifstream file;
 
-	void error(const char* message) {
+	void error(std::string message) {
 		std::cout << "\nError: " << message << std::endl;
-		throw std::exception(message);
+		throw std::exception();
 	}
 
 	bool isalpha(char c) {
@@ -108,7 +110,7 @@ private:
 	}
 
 	bool isspace(char c) {
-		return c == ' ' || c == '\t';
+		return c == ' ' || c == '\t' || c == '\n' || c == '\r';
 	}
 
 	void peek_next_char() {
@@ -134,7 +136,7 @@ private:
 		std::streampos start_pos = file.tellg();
 		start_pos -= 1;
 
-		std::string id = "var";
+		std::string id = "";
 		while (isalpha(current_char) && current_char != EOF) {
 			id += current_char;
 			get_next_char();
@@ -151,7 +153,7 @@ private:
 			}
 		}
 
-		
+
 
 		for (auto x : symbol_table) {
 			if (x.first == id) {
@@ -165,7 +167,7 @@ private:
 		}
 		else
 			error("No variable with this name");
-		
+
 	}
 
 	double proc_expr() {
@@ -184,7 +186,7 @@ private:
 				value -= next_operand;
 			}
 		}
-		
+
 		return value;
 	}
 

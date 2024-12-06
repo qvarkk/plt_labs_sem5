@@ -306,10 +306,10 @@ private:
 
 					switch (op) {
 					case OpType::Plus:
-						res = std::stod(std::get<1>(addrTriad)) + std::stod(first);
+						res = std::stod(std::get<1>(addrTriad)) + std::stod(second);
 						break;
 					case OpType::Minus:
-						res = std::stod(std::get<1>(addrTriad)) - std::stod(first);
+						res = std::stod(std::get<1>(addrTriad)) - std::stod(second);
 						break;
 					}
 

@@ -36,7 +36,7 @@ public:
 			return token;
 		}
 		else if (current_char == EOF)
-			return Token("", Type::END);
+			return Token("?", Type::SEPARATOR);
 		else
 			error("invalid character");
 	}

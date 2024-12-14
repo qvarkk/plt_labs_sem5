@@ -1,11 +1,23 @@
 #include <string>
 
 enum Type {
-	ID = 'I', CONST = 'C', FUNC = 'F', T = 'T', E = 'E', S = 'S', L = 'L', SEPARATOR = '?', TERMINAL = '0', END = '1'
+	SEPARATOR = '?', 
+	TERMINAL = '0',
+	CONST = 'C', 
+	FUNC = 'F', 
+	ID = 'I', 
+	T = 'T', 
+	E = 'E', 
+	S = 'S', 
+	L = 'L', 
 };
 
 enum Precedence{
-	NONE = ' ', LESS = '<', EQUAL = '=', MORE = '>', DUAL = '@'
+	EQUAL = '=', 
+	NONE = ' ',
+	LESS = '<', 
+	MORE = '>', 
+	DUAL = '@',
 };
 
 class Token {
@@ -13,12 +25,18 @@ private:
 	std::string value;
 	Type type;
 	Precedence precedence;
+	int triad_num;
 public:
-	Token(std::string value, Type type, Precedence precedence = NONE) : value(value), type(type), precedence(precedence) {}
+	Token(std::string value, Type type, Precedence precedence = NONE, int triad_num = 0) : 
+		value(value), 
+		type(type), 
+		precedence(precedence), 
+		triad_num(triad_num) {}
 
 	std::string get_value() { return value; }
 	Type get_type() { return type; }
 	Precedence get_precedence() { return precedence; }
+	int get_triad_num() { return triad_num; }
 
 	char get_char() {
 		if (this->type != Type::TERMINAL)
@@ -28,4 +46,5 @@ public:
 	}
 
 	void set_precedence(Precedence p) { precedence = p; }
+	void set_triad_num(int n) { triad_num = n; }
 };
